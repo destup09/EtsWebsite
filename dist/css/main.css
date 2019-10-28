@@ -59,7 +59,7 @@ button:focus {
   width: 200px;
   height: 170px;
   background: rgba(0, 0, 0, 0.8);
-  margin-left: 305px;
+  margin-left: 425px;
 }
 
 .nav__services--wrapper li,
@@ -456,27 +456,27 @@ button:focus {
 
 .inter__content--main {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .inter__top {
   background: white;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  margin-bottom: 80px;
 }
 
 .inter__top h1 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   color: #3189e8;
-  margin: 40px 20px 30px 205px;
+  margin: 40px 20px 30px 10%;
 }
 
 .inter__top p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   text-align: justify;
-  margin: 10px 205px 10px 205px;
+  margin: 10px 205px 10px 10%;
   line-height: 25px;
   word-spacing: 3px;
 }
@@ -538,16 +538,151 @@ button:focus {
   font-family: "Roboto", sans-serif;
 }
 
-.directions__content {
-  margin-top: 100px;
+.directions__main .directions__content {
+  margin: 170px 50px 5% 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.directions__content .text__container h1 {
-  font-size: 45px;
+.directions__main .directions__content .text__container {
+  width: 50%;
+  height: 500px;
+  padding-left: 7%;
+}
+
+.directions__main .directions__content .text__container h1 {
+  font-size: 32px;
+  color: #3189e8;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.directions__main .directions__content .text__container p {
+  color: #22262b;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.directions__main .directions__content .text__container ul {
+  margin-left: 20px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.directions__main .directions__content .text__container .additional {
+  padding-right: 25%;
+}
+
+.directions__main .directions__content .img__container {
+  width: 45%;
+  height: auto;
+}
+
+.directions__main .directions__content .img__container img {
+  width: 80%;
+  height: auto;
+  -webkit-box-shadow: 11px 14px 24px 2px rgba(0, 0, 0, 0.75);
+          box-shadow: 11px 14px 24px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  margin-left: 100px;
+}
+
+.directions__main .directions__moreinfo {
+  height: 500px;
+  width: 100%;
+  background: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.directions__main .directions__moreinfo .directions__left {
+  width: 50%;
+  height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.directions__main .directions__moreinfo .directions__left h1 {
+  font-size: 44px;
+  font-weight: 400;
+  padding-right: 7%;
+}
+
+.directions__main .directions__moreinfo .directions__right {
+  width: 50%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.directions__main .directions__moreinfo .rightP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.directions__main .directions__moreinfo .rightP p {
+  font-size: 18px;
+  color: #22262b;
+  padding-bottom: 45px;
+}
+
+.directions__main .directions__moreinfo .rightP .fa-check {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #3189e8;
+}
+
+.fleet {
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.fleet__main {
+  margin-top: 120px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.fleet__main h1 {
+  color: #3189e8;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-size: 32px;
+}
+
+.fleet__main p {
+  font-size: 22px;
 }
 /*# sourceMappingURL=main.css.map */
