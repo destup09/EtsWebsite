@@ -1,0 +1,136 @@
+.content {
+  width: 100%;
+  height: 70vh;
+  background: $accent-color;
+
+  .content__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text-wrapper {
+    width: 30%;
+    height: 500px;
+
+    .content__h1 {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      font-size: 36px;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    .content__p {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      line-height: 25px;
+      word-spacing: 3px;
+      font-weight: 500;
+      text-align: justify;
+      color: $secondary-color;
+    }
+  }
+
+  .img-wrapper {
+    width: 40%;
+    height: auto;
+
+    .content__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  background: $secondary-color;
+  color: $accent-color;
+  font-family: sans-serif;
+  line-height: 25px;
+
+  .footer1,
+  .footer3 {
+    height: 150px;
+    width: 40%;
+    margin-top: 20px;
+  }
+
+  .footer2 {
+    width: 20%;
+    height: 130px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    .contact__footer {
+      height: 55px;
+      width: 150px;
+      background: none;
+      display: block;
+      margin: 30px auto 0;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 19px;
+      text-transform: uppercase;
+      color: $accent-color;
+      @include transition-ease-fast;
+      border: 1px solid white;
+      cursor: pointer;
+
+      &:hover {
+        background: $primary-color;
+      }
+    }
+  }
+
+  .footer1 {
+    text-align: center;
+
+    p {
+      @include transition-ease-fast;
+      cursor: pointer;
+    }
+
+    p:hover {
+      color: $primary-color;
+    }
+  }
+
+  .footer2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .footer3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .img-wrapper {
+    width: 45%;
+    height: 350px;
+
+    .content__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .text-wrapper {
+    width: 50%;
+    height: 500px;
+
+    p {
+      width: 120%;
+    }
+  }
+}
+
+.content {
+  margin-bottom: -120px;
+}

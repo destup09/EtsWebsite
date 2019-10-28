@@ -1,0 +1,15 @@
+.directions__main {
+  font-family: "Roboto", sans-serif;
+}
+
+.directions__content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+
+  .text__container {
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
