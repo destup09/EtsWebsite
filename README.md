@@ -1,7 +1,7 @@
 # EtsWebsite
 Truck managment company website
 
-Build with HTML, JS, SCSS.
+Built with HTML, JS, SCSS.
 
 It's my first website.
 
