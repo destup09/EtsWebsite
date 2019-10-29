@@ -227,7 +227,8 @@ button:focus {
 }
 
 .slider__menu--wrapper .slider__divs #slider__h2--1,
-.slider__menu--wrapper .slider__divs #slider__h2--2 {
+.slider__menu--wrapper .slider__divs #slider__h2--2,
+.slider__menu--wrapper .slider__divs #slider__h2--3 {
   margin-top: 22px;
   margin-bottom: 10px;
 }
@@ -459,28 +460,6 @@ button:focus {
   height: auto;
 }
 
-.inter__top {
-  background: white;
-  padding-top: 120px;
-  margin-bottom: 80px;
-}
-
-.inter__top h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  color: #3189e8;
-  margin: 40px 20px 30px 10%;
-}
-
-.inter__top p {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  text-align: justify;
-  margin: 10px 205px 10px 10%;
-  line-height: 25px;
-  word-spacing: 3px;
-}
-
 .inter__bottom {
   background: url(../../img/truck-hangar.jpg) center;
   background-attachment: fixed;
@@ -684,5 +663,61 @@ button:focus {
 
 .fleet__main p {
   font-size: 22px;
+}
+
+.dire__main {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+}
+
+.dire__main .directions__content {
+  margin: 170px 50px 5% 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dire__main .directions__content .text__container {
+  width: 50%;
+  height: 500px;
+  padding-left: 7%;
+}
+
+.dire__main .directions__content .text__container h1 {
+  font-size: 32px;
+  color: #3189e8;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.dire__main .directions__content .text__container p {
+  color: #22262b;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.dire__main .directions__content .text__container ul {
+  margin-left: 20px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.dire__main .directions__content .text__container .additional {
+  padding-right: 25%;
+}
+
+.dire__main .directions__content .img__container {
+  width: 45%;
+  height: auto;
+}
+
+.dire__main .directions__content .img__container img {
+  width: 80%;
+  height: auto;
+  -webkit-box-shadow: 11px 14px 24px 2px rgba(0, 0, 0, 0.75);
+          box-shadow: 11px 14px 24px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  margin-left: 100px;
 }
 /*# sourceMappingURL=main.css.map */

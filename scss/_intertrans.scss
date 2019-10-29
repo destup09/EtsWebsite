@@ -3,28 +3,6 @@
   height: auto;
 }
 
-.inter__top {
-  background: white;
-  padding-top: 120px;
-  margin-bottom: 80px;
-
-  h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    color: $primary-color;
-    margin: 40px 20px 30px 10%;
-  }
-
-  p {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    margin: 10px 205px 10px 10%;
-    line-height: 25px;
-    word-spacing: 3px;
-  }
-}
-
 .inter__bottom {
   background: url(../../img/truck-hangar.jpg) center;
   background-attachment: fixed;
