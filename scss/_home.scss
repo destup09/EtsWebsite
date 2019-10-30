@@ -173,28 +173,3 @@
     }
   }
 }
-
-@media (max-width: $breakpoint-hd) {
-  .landing_page {
-    height: 120vh;
-    width: 100%;
-    margin-top: -10vh;
-    background: $accent-color2;
-  }
-
-  .slider-wrapper {
-    width: 100%;
-    background-size: cover;
-    height: 90vh;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  .slide-h2 {
-    margin-left: 60%;
-  }
-
-  .slide-p {
-    margin-left: 60%;
-  }
-}
