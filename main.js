@@ -103,3 +103,36 @@
   }
   autoSlide();
 })();
+
+(function() {
+  const menuBtn = document.querySelector(".nav__btn");
+  const burger = document.querySelector(".nav__btn--burger");
+  const header = document.querySelector(".header");
+  const nav = document.querySelector(".nav");
+  const navItems = document.querySelector(".nav__ul");
+  const navLis = document.querySelectorAll(".nav__li");
+
+  let showMenu = false;
+
+  menuBtn.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    if (!showMenu) {
+      burger.classList.add("open");
+      header.classList.add("clicked");
+      nav.classList.add("hide");
+      navItems.classList.add("hide");
+      navLis.forEach(item => item.classList.add("open"));
+
+      showMenu = true;
+    } else {
+      burger.classList.remove("open");
+      header.classList.remove("clicked");
+      nav.classList.remove("hide");
+      navItems.classList.remove("hide");
+      navLis.forEach(item => item.classList.remove("open"));
+
+      showMenu = false;
+    }
+  }
+})();

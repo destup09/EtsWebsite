@@ -1,40 +1,134 @@
 //header
+@media screen and (max-width: 768px) {
+  .header {
+    @include transition-ease;
+  }
 
-.nav {
-  &__ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .clicked {
+    height: 270px;
+  }
 
-    & li,
-    a {
-      text-decoration: none;
-      color: $accent-color;
-      list-style: none;
-      font-family: "Roboto", sans-serif;
-      text-transform: uppercase;
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin-left: 2rem;
-      margin-bottom: 10px;
-      margin-top: 10px;
+  .nav {
+    .logo {
+      visibility: visible;
+      transform: translateX(0);
     }
 
-    & a {
-      &:hover {
-        border-bottom: 2px solid $primary-color;
+    &__ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      visibility: hidden;
+
+      &.hide {
+        visibility: visible;
+        transform: translateX(0);
+      }
+
+      & li,
+      a {
+        text-decoration: none;
+        color: $accent-color;
+        list-style: none;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: 2rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        transform: translateX(100vw);
+        @include transition-ease;
+
+        &.open {
+          transform: translateX(0);
+        }
+
+        &.active > a {
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+
+      &__link {
+      }
+
+      & a {
+        &:hover {
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+
+    .nav__btn {
+      position: absolute;
+      z-index: 1;
+      right: 1rem;
+      top: 1rem;
+      height: 20px;
+      width: 28px;
+      cursor: pointer;
+      @include transition-ease;
+
+      &--burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: $accent-color;
+        @include transition-ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -8px;
+          width: 28px;
+          height: 3px;
+          background-color: $accent-color;
+          @include transition-ease;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 8px;
+          width: 20px;
+          height: 3px;
+          background-color: $accent-color;
+          @include transition-ease;
+        }
+
+        &.open {
+          transform: rotate(360deg);
+          background: transparent;
+
+          &::before {
+            transform: rotate(45deg) translate(5px, 8px);
+          }
+
+          &::after {
+            width: 28px;
+            transform: rotate(-45deg) translate(3px, -7px);
+          }
+        }
       }
     }
   }
-}
 
-.logo {
-  margin-left: 0px;
-  margin-top: -10px;
-  cursor: pointer;
-}
+  @for $i from 1 through 4 {
+    .nav__li:nth-child(#{$i}) {
+      transition-delay: ($i * 0.1s) + 0.15s;
+    }
+  }
 
-//landing page
+  .logo {
+    margin-left: 0px;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+}
+//landing page hd
 @media (max-width: $breakpoint-hd) {
   .landing_page {
     height: 120vh;
@@ -120,14 +214,12 @@
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .text-wrapper {
-    width: 500px;
+    width: 600px;
     height: 230px;
+    margin: 0 auto;
 
     .content__h1 {
       font-family: "Roboto", sans-serif;
@@ -136,7 +228,6 @@
       text-align: center;
       color: $primary-color;
       margin-bottom: 20px;
-      margin-left: 80px;
     }
 
     .content__p {
@@ -148,17 +239,18 @@
       text-align: justify;
       text-align: center;
       color: $secondary-color;
+      width: 100%;
     }
   }
 
   .img-wrapper {
-    width: 70%;
+    width: 500px;
     height: auto;
+    margin: 0 auto;
 
     .content__img {
-      width: 100%;
+      width: 500px;
       height: auto;
-      margin-left: 65px;
     }
   }
 }
