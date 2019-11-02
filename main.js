@@ -58,6 +58,25 @@
   });
 })();
 
+//nav click responsive
+(function() {
+  const navServices = document.querySelector(".nav-services");
+  const navServicesLi = document.querySelectorAll(".nav-services--li");
+  let visible = false;
+
+  navServices.addEventListener("click", function() {
+    if (visible == false) {
+      navServicesLi.forEach(item =>
+        item.classList.remove("nav__services--slide")
+      );
+      visible = true;
+    } else {
+      navServicesLi.forEach(item => item.classList.add("nav__services--slide"));
+      visible = false;
+    }
+  });
+})();
+
 //slider
 (function() {
   const slider = document.querySelector(".slider"); //Slider wrapper
