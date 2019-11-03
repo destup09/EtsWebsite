@@ -69,6 +69,10 @@
   }
 
   .directions__main {
+    .domes__moreinfo {
+      margin-top: -200px;
+    }
+
     .directions__moreinfo {
       padding-left: 2%;
       padding-right: 3%;
@@ -101,10 +105,6 @@
 
 //header
 @media screen and (max-width: $breakpoint-tablet) {
-  * {
-    @include transition-ease;
-  }
-
   .header {
     @include transition-ease;
   }
@@ -144,7 +144,7 @@
         margin-top: 10px;
 
         transform: translateX(100vw);
-        @include transition-ease;
+        @include transition-ease-fast;
 
         &.open {
           transform: translateX(0);
@@ -345,8 +345,45 @@
 
   .nav__services--slide {
     display: none;
+  }
+
+  .nav__services--right {
+    transform: translateX(100vw);
+  }
+
+  .services__wrapper--div {
     position: absolute;
-    top: 50px;
-    left: 50%;
+    z-index: 1;
+    top: 150px;
+    height: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a,
+    li {
+      text-decoration: none;
+      color: $accent-color;
+      list-style: none;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 400;
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+  }
+
+  .header__long {
+    height: 325px;
+  }
+
+  .fleet__down {
+    padding-top: 85px;
+  }
+
+  .transition__fast {
+    @include transition-ease-fast;
   }
 }
