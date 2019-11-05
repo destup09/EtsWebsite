@@ -9,4 +9,4 @@ Slider on the main page is kinda responsive, i need to work on this. It's not wo
 
 Site is somewhat responisve on tablets but i need to work on that aswell. Phone responsiveness isnt done yet.
 
-Time: 30h
+Time: 32h
