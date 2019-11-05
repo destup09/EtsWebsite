@@ -7,6 +7,6 @@ It's my first website.
 
 Slider on the main page is kinda responsive, i need to work on this. It's not working on some browsers but it's matter of changing event listener.
 
-Site is somewhat responisve on tablets but i need to work on that aswell. Phone responsiveness isnt dont yet.
+Site is somewhat responisve on tablets but i need to work on that aswell. Phone responsiveness isnt done yet.
 
-Time: 27.5h
+Time: 30h
