@@ -1,3 +1,9 @@
+@media (max-width: $breakpoint-fullhd) {
+  .services__wrapper--div {
+    display: none;
+  }
+}
+
 //*********************************
 //             HD
 
@@ -379,11 +385,11 @@
     height: 325px;
   }
 
-  .fleet__down {
-    padding-top: 85px;
+  .header__fast {
+    @include transition-ease-fast;
   }
 
-  .transition__fast {
-    @include transition-ease-fast;
+  .fleet__down {
+    padding-top: 85px;
   }
 }

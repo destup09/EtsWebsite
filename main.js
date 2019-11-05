@@ -1,4 +1,4 @@
-console.log("Witam na mojej stronie! :)");
+console.log("%cELO!", "color: red; font-family: sans-serif; font-size: 14.5em");
 
 //menu burger animation
 (function() {
@@ -22,6 +22,7 @@ console.log("Witam na mojej stronie! :)");
       nav.classList.add("hide");
       navItems.classList.add("hide");
       navLis.forEach(item => item.classList.add("open"));
+      header.classList.add("header__fast");
 
       showMenu = true;
     } else {
@@ -58,13 +59,11 @@ console.log("Witam na mojej stronie! :)");
   const header = document.querySelector(".header");
   let visible = false;
 
-  ourFleet.classList.add("transition__fast");
-
   navServices.addEventListener("click", function() {
     if (!visible) {
       ourFleet.classList.add("fleet__down");
 
-      setTimeout(headerSlower, 400);
+      setTimeout(headerSlower, 550);
 
       function headerSlower() {
         header.classList.add("header__long");
